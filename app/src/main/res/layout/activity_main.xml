@@ -7,51 +7,132 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity"
     android:orientation="horizontal"
-    android:background="@color/purple_700">
+    android:background="#FFFFFF">
 
 
-    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:app="http://schemas.android.com/apk/res-auto"
-        xmlns:tools="http://schemas.android.com/tools"
-        android:layout_width="0dp"
-        android:layout_height="match_parent"
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:layout_weight="1"
         tools:context=".MainActivity"
         android:orientation="vertical"
-        android:background="@color/purple_700">
+        >
 
         <TextView
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Team A"
-            />
+            android:textAlignment="center"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+             />
 
         <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:lineSpacingExtra="8sp"
             android:text="0"
-            android:width="20dp"
-            android:height="20dp"
+            android:textAlignment="center"
+            android:textColor="#0B0000"
+            android:textSize="50sp"
+            android:paddingTop="10dp"
+            android:paddingBottom="20dp"
+            android:id="@+id/A"/>
+
+        <Button
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_marginBottom="20dp"
+            android:background="@color/cardview_light_background"
+            android:text="+3 POINTS"
+            android:textAlignment="center"
+            app:backgroundTint="@color/purple_200"
+
             />
+
+        <Button
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_marginBottom="20dp"
+            android:background="@color/cardview_light_background"
+            android:text="+2 POINTS"
+            android:textAlignment="center"
+            app:backgroundTint="@color/purple_200" />
+
+        <Button
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_marginBottom="10dp"
+            android:background="@android:color/holo_orange_dark"
+            android:text="FREE THROW"
+            android:textAlignment="center"
+            app:backgroundTint="@color/purple_200" />
 
     </LinearLayout>
 
-    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:app="http://schemas.android.com/apk/res-auto"
-        xmlns:tools="http://schemas.android.com/tools"
-        android:layout_width="0dp"
-        android:layout_height="match_parent"
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:layout_weight="1"
         tools:context=".MainActivity"
         android:orientation="vertical"
-        android:background="@color/cardview_dark_background">
+        >
 
         <TextView
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Team A"
+            android:text="Team B"
+            android:textAlignment="center"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display1"
             />
 
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:lineSpacingExtra="8sp"
+            android:text="0"
+            android:textAlignment="center"
+            android:textColor="#0B0000"
+            android:textSize="50sp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:id="@+id/B"/>
+
+        <Button
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_marginBottom="20dp"
+            android:background="@android:color/holo_orange_dark"
+            android:text="+3 POINTS"
+            android:textAlignment="center"
+            app:backgroundTint="@color/purple_200" />
+
+        <Button
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_marginBottom="20dp"
+            android:background="@android:color/holo_orange_dark"
+            android:text="+2 POINTS"
+            android:textAlignment="center"
+            app:backgroundTint="@color/purple_200" />
+
+        <Button
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_marginBottom="10dp"
+            android:background="@android:color/holo_orange_dark"
+            android:text="FREE THROW"
+            android:textAlignment="center"
+            app:backgroundTint="@color/purple_200" />
+
     </LinearLayout>
+
+
+
 
 </LinearLayout>
