@@ -47,6 +47,7 @@
             android:text="+3 POINTS"
             android:textAlignment="center"
             app:backgroundTint="@color/purple_200"
+            android:onClick="addThreeA"
 
             />
 
@@ -58,7 +59,8 @@
             android:background="@color/cardview_light_background"
             android:text="+2 POINTS"
             android:textAlignment="center"
-            app:backgroundTint="@color/purple_200" />
+            app:backgroundTint="@color/purple_200"
+            android:onClick="addTwoA"/>
 
         <Button
             android:layout_width="180dp"
@@ -68,7 +70,8 @@
             android:background="@android:color/holo_orange_dark"
             android:text="FREE THROW"
             android:textAlignment="center"
-            app:backgroundTint="@color/purple_200" />
+            app:backgroundTint="@color/purple_200"
+            android:onClick="addFreeA"/>
 
     </LinearLayout>
 
@@ -108,7 +111,8 @@
             android:background="@android:color/holo_orange_dark"
             android:text="+3 POINTS"
             android:textAlignment="center"
-            app:backgroundTint="@color/purple_200" />
+            app:backgroundTint="@color/purple_200"
+            android:onClick="addThreeB"/>
 
         <Button
             android:layout_width="180dp"
@@ -118,7 +122,8 @@
             android:background="@android:color/holo_orange_dark"
             android:text="+2 POINTS"
             android:textAlignment="center"
-            app:backgroundTint="@color/purple_200" />
+            app:backgroundTint="@color/purple_200"
+            android:onClick="addTwoB"/>
 
         <Button
             android:layout_width="180dp"
@@ -128,7 +133,8 @@
             android:background="@android:color/holo_orange_dark"
             android:text="FREE THROW"
             android:textAlignment="center"
-            app:backgroundTint="@color/purple_200" />
+            app:backgroundTint="@color/purple_200"
+            android:onClick="addFreeB"/>
 
     </LinearLayout>
 
