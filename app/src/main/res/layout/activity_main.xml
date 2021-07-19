@@ -1,144 +1,161 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity"
-    android:orientation="horizontal"
-    android:background="#FFFFFF">
-
+    android:orientation="vertical"
+    tools:context=".MainActivity">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_weight="1"
-        tools:context=".MainActivity"
-        android:orientation="vertical"
-        >
+        android:orientation="horizontal">
 
-        <TextView
-            android:layout_width="match_parent"
+
+        <LinearLayout
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:text="Team A"
-            android:textAlignment="center"
-            android:textAppearance="@style/TextAppearance.AppCompat.Display1"
-             />
+            android:layout_weight="1"
+            android:orientation="vertical"
+            tools:context=".MainActivity">
 
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="100dp"
-            android:lineSpacingExtra="8sp"
-            android:text="0"
-            android:textAlignment="center"
-            android:textColor="#0B0000"
-            android:textSize="50sp"
-            android:paddingTop="10dp"
-            android:paddingBottom="20dp"
-            android:id="@+id/A"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Team A"
+                android:textAlignment="center"
+                android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                android:textColor="#0B0000"
+                android:layout_marginTop="16dp"/>
 
-        <Button
-            android:layout_width="180dp"
+            <TextView
+                android:id="@+id/A"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:padding="4dp"
+                android:text="0"
+                android:textAlignment="center"
+                android:textColor="#0B0000"
+                android:textSize="50sp" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/cardview_light_background"
+                android:onClick="addThreeA"
+                android:text="+3 POINTS"
+                android:textAlignment="center"
+                app:backgroundTint="@color/purple_200"
+                android:layout_marginTop="8dp"
+                android:layout_marginLeft="24dp"
+                android:layout_marginRight="24dp"
+                />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/cardview_light_background"
+                android:onClick="addTwoA"
+                android:text="+2 POINTS"
+                android:textAlignment="center"
+                app:backgroundTint="@color/purple_200"
+                android:layout_marginTop="8dp"
+                android:layout_marginLeft="24dp"
+                android:layout_marginRight="24dp"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/holo_orange_dark"
+                android:onClick="addFreeA"
+                android:text="FREE THROW"
+                android:textAlignment="center"
+                app:backgroundTint="@color/purple_200"
+                android:layout_marginTop="8dp"
+                android:layout_marginLeft="24dp"
+                android:layout_marginRight="24dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="40dp"
-            android:layout_marginBottom="20dp"
-            android:background="@color/cardview_light_background"
-            android:text="+3 POINTS"
-            android:textAlignment="center"
-            app:backgroundTint="@color/purple_200"
-            android:onClick="addThreeA"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            tools:context=".MainActivity">
 
-            />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Team B"
+                android:textAlignment="center"
+                android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                android:textColor="#0B0000"
+                android:layout_marginTop="16dp"/>
 
-        <Button
-            android:layout_width="180dp"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="40dp"
-            android:layout_marginBottom="20dp"
-            android:background="@color/cardview_light_background"
-            android:text="+2 POINTS"
-            android:textAlignment="center"
-            app:backgroundTint="@color/purple_200"
-            android:onClick="addTwoA"/>
+            <TextView
+                android:id="@+id/B"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:lineSpacingExtra="8sp"
+                android:padding="4dp"
+                android:paddingBottom="10dp"
+                android:text="0"
+                android:textAlignment="center"
+                android:textColor="#0B0000"
+                android:textSize="50sp" />
 
-        <Button
-            android:layout_width="180dp"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="40dp"
-            android:layout_marginBottom="10dp"
-            android:background="@android:color/holo_orange_dark"
-            android:text="FREE THROW"
-            android:textAlignment="center"
-            app:backgroundTint="@color/purple_200"
-            android:onClick="addFreeA"/>
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/holo_orange_dark"
+                android:onClick="addThreeB"
+                android:text="+3 POINTS"
+                android:textAlignment="center"
+                app:backgroundTint="@color/purple_200"
+                android:layout_marginTop="8dp"
+                android:layout_marginLeft="24dp"
+                android:layout_marginRight="24dp"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/holo_orange_dark"
+                android:onClick="addTwoB"
+                android:text="+2 POINTS"
+                android:textAlignment="center"
+                app:backgroundTint="@color/purple_200"
+                android:layout_marginTop="8dp"
+                android:layout_marginLeft="24dp"
+                android:layout_marginRight="24dp"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/holo_orange_dark"
+                android:onClick="addFreeB"
+                android:text="FREE THROW"
+                android:textAlignment="center"
+                app:backgroundTint="@color/purple_200"
+                android:layout_marginTop="8dp"
+                android:layout_marginLeft="24dp"
+                android:layout_marginRight="24dp"/>
+
+        </LinearLayout>
 
     </LinearLayout>
 
-    <LinearLayout
-        android:layout_width="match_parent"
+    <Button
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_weight="1"
-        tools:context=".MainActivity"
-        android:orientation="vertical"
-        >
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Team B"
-            android:textAlignment="center"
-            android:textAppearance="@style/TextAppearance.AppCompat.Display1"
-            />
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="100dp"
-            android:lineSpacingExtra="8sp"
-            android:text="0"
-            android:textAlignment="center"
-            android:textColor="#0B0000"
-            android:textSize="50sp"
-            android:paddingTop="10dp"
-            android:paddingBottom="10dp"
-            android:id="@+id/B"/>
-
-        <Button
-            android:layout_width="180dp"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="40dp"
-            android:layout_marginBottom="20dp"
-            android:background="@android:color/holo_orange_dark"
-            android:text="+3 POINTS"
-            android:textAlignment="center"
-            app:backgroundTint="@color/purple_200"
-            android:onClick="addThreeB"/>
-
-        <Button
-            android:layout_width="180dp"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="40dp"
-            android:layout_marginBottom="20dp"
-            android:background="@android:color/holo_orange_dark"
-            android:text="+2 POINTS"
-            android:textAlignment="center"
-            app:backgroundTint="@color/purple_200"
-            android:onClick="addTwoB"/>
-
-        <Button
-            android:layout_width="180dp"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="40dp"
-            android:layout_marginBottom="10dp"
-            android:background="@android:color/holo_orange_dark"
-            android:text="FREE THROW"
-            android:textAlignment="center"
-            app:backgroundTint="@color/purple_200"
-            android:onClick="addFreeB"/>
-
-    </LinearLayout>
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:onClick="ResetAB"
+        android:layout_margin="32dp"
+        android:text="Reset"
+        app:backgroundTint="@color/purple_200"/>
 
 
-
-
-</LinearLayout>
+</RelativeLayout>
